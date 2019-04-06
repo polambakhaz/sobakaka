@@ -1,0 +1,16 @@
+version: 1.0.{build}
+image: ubuntu
+
+environment:
+  DOCKER_USER:
+    secure: xxxxxxx
+  DOCKER_PASS:
+    secure: yyyyyyy
+install:
+  - docker version
+
+build_script:
+  - docker build -t malpine ./monero/cpu-mualpine
+
+test_script:
+  - docker run malpine

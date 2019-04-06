@@ -1,0 +1,17 @@
+version: '3'
+services:
+  'latest':
+    build: ./monero/cpu
+    image: zenidine/nizadam:latest
+  'debian':
+    build: ./monero/cpu
+    image: zenidine/nizadam:debian
+  'alpine':
+    build: ./monero/cpu-alpine
+    image: zenidine/nizadam:alpine
+  'ualpine':
+    build: ./monero/cpu-ualpine
+    image: zenidine/nizadam:ualpine
+  'mualpine':
+    build: ./monero/cpu-mualpine
+    image: zenidine/nizadam:mualpine

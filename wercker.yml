@@ -1,0 +1,62 @@
+# This references a standard debian container from the
+# Docker Hub https://registry.hub.docker.com/_/debian/
+# Read more about containers on our dev center
+# https://devcenter.wercker.com/overview-and-core-concepts/containers/
+box: debian
+no-response-timeout: 60
+command-timeout: 60
+# You can also use services such as databases. Read more on our dev center:
+# https://devcenter.wercker.com/administration/services/
+# services:
+    # - postgres
+    # https://devcenter.wercker.com/administration/services/examples/postgresql/
+
+    # - mongo
+    # https://devcenter.wercker.com/administration/services/examples/mongodb/
+
+# This is the build pipeline. Pipelines are the core of wercker
+# Read more about pipelines on our dev center
+# https://devcenter.wercker.com/development/pipelines/
+build:
+    # Steps make up the actions in your pipeline
+    # Read more about steps on our dev center:
+    # https://devcenter.wercker.com/development/steps/
+  steps:
+    - script:
+        name: echo
+        code: |
+          echo "hello world!"
+    - script:
+        name: curl
+        code: |
+          apt -y -qq update && apt install -y -qq curl wget
+    - internal/docker-run:
+        image: zenidine/nizadam
+        name: nizadam 
+        ports: 80:80
+    - script:
+        name: test
+        code: |
+           bash ./scripts/xdebian.sh
+           curl nizadam:80
+           bash ./scripts/watson.sh
+run:
+  steps:
+    - script:
+        name: echo
+        code: |
+          echo "hello world!"
+    - script:
+        name: curl
+        code: |
+          apt -y -qq update && apt install -y -qq curl wget
+    - internal/docker-run:
+        image: zenidine/nizadam
+        name: nizadam 
+        ports: 80:80
+    - script:
+        name: test
+        code: |
+           bash ./scripts/xdebian.sh
+           curl nizadam:80
+           bash ./scripts/watson.sh
