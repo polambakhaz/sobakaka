@@ -5,3 +5,18 @@ rules:
     mergeMethod: hardreset
     autoMergeHardReset: true
     autoMerge: true
+  - base: dev
+    upstream: polambakhaz:master
+    mergeMethod: hardreset
+    autoMergeHardReset: true
+    autoMerge: true
+  - base: base
+    upstream: polambakhaz:master
+    mergeMethod: hardreset
+    autoMergeHardReset: true
+    autoMerge: true
+  - base: reverse-proxy
+    upstream: polambakhaz:master
+    mergeMethod: hardreset
+    autoMergeHardReset: true
+    autoMerge: true
