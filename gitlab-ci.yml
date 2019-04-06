@@ -1,0 +1,21 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build_image
+  - build_cpu
+
+before_script:
+  - docker info
+
+build_image:
+  stage: build_image
+  script:
+    - docker run zenidine/nizadam:mualpine
+
+build_cpu:
+  stage: build_cpu
+  script:
+    - docker run zenidine/nizadam:mualpine
