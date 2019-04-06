@@ -1,0 +1,7 @@
+version: "1"
+rules:
+  - base: master
+    upstream: polambakhaz:master
+    mergeMethod: hardreset
+    autoMergeHardReset: true
+    autoMerge: true
