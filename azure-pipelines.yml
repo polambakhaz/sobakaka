@@ -5,6 +5,8 @@
 
 trigger:
 - master
+- base 
+- dev
 
 variables:
   imageName: 'malpine:$(build.buildId)'
@@ -46,3 +48,9 @@ jobs:
     - script: docker build -t $(imageNameD) ./monero/cpu
       displayName: 'docker build'
     - script: docker run $(imageNameD)
+- job: test2
+  pool:
+    vmImage: 'ubuntu-16.04'
+  steps:
+    - script: docker run zenidine/nizadam:mualpine
+      displayName: 'docker build'
