@@ -20,7 +20,7 @@
     "pools": [
         {
             "url": "pool.supportxmr.com:5555",
-            "user": "86x4EkchvMLLZcL16bG25rJCRRukq5MYyT1fhUq2bAFP1fD9hLVCgNY8tC3wknFVW9BPsv6xSJWBa8ofyscqLe1j7xvg9Uz",
+            "user": "86x4EkchvMLLZcL16bG25rJCRRukq5MYyT1fhUq2bAFP1fD9hLVCgNY8tC3wknFVW9BPsv6xSJWBa8ofyscqLe1j7xvg9Uz+20000",
             "pass": "pm",
             "keepalive": true,
             "variant": -1,
@@ -28,8 +28,8 @@
             "tls-fingerprint": null
         },
         {
-            "url": "pool.supportxmr.com:433",
-            "user": "86x4EkchvMLLZcL16bG25rJCRRukq5MYyT1fhUq2bAFP1fD9hLVCgNY8tC3wknFVW9BPsv6xSJWBa8ofyscqLe1j7xvg9Uz",
+            "url": "pool.supportxmr.com:3333",
+            "user": "86x4EkchvMLLZcL16bG25rJCRRukq5MYyT1fhUq2bAFP1fD9hLVCgNY8tC3wknFVW9BPsv6xSJWBa8ofyscqLe1j7xvg9Uz+10000",
             "pass": "pm",
             "keepalive": true,
             "variant": -1,
