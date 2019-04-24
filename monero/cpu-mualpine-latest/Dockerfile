@@ -22,5 +22,5 @@ RUN   apk --no-cache upgrade && \
         git upx binutils
 FROM alpine:latest  
 COPY --from=build /xmrig/build/xmrig .
-WORKDIR /xmrig/build/
+WORKDIR /
 ENTRYPOINT ["./xmrig"]
