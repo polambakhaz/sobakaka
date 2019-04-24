@@ -1,4 +1,4 @@
-FROM  alpine:3.8 as build
+FROM  alpine:3.9 as build
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
         git \
