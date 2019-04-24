@@ -15,3 +15,12 @@ services:
   'mualpine':
     build: ./monero/cpu-mualpine
     image: zenidine/nizadam:mualpine
+  'mkomako':
+    build: ./monero/mproxy
+    image: zenidine/nizadam:mkomako
+  'komako':
+    build: ./monero/proxy
+    image: zenidine/nizadam:komako
+  'mkomako-latest':
+    build: ./monero/mproxy-latest
+    image: zenidine/nizadam:mkomako-latest
