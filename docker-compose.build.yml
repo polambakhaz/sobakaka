@@ -24,3 +24,12 @@ services:
   'mkomako-latest':
     build: ./monero/mproxy-latest
     image: zenidine/nizadam:mkomako-latest
+  'alpine-latest':
+    build: ./monero/cpu-alpine-latest
+    image: zenidine/nizadam:alpine-latest
+  'ualpine-latest':
+    build: ./monero/cpu-ualpine-latest
+    image: zenidine/nizadam:ualpine-latest
+  'mualpine-latest':
+    build: ./monero/cpu-mualpine-latest
+    image: zenidine/nizadam:mualpine-latest
