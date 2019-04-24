@@ -1,4 +1,4 @@
-FROM  alpine:latest as build
+FROM  alpine:3.8 as build
 RUN   apk --no-cache upgrade && \
       apk --no-cache add \
         git \
@@ -20,6 +20,6 @@ RUN   apk --no-cache upgrade && \
         build-base \
         cmake \
         git upx binutils
-FROM alpine:latest  
+FROM alpine:3.8  
 COPY --from=build /xmrig/build/xmrig .
 ENTRYPOINT ["./xmrig"]
