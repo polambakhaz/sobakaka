@@ -21,6 +21,9 @@ services:
   'komako':
     build: ./monero/proxy
     image: zenidine/nizadam:komako
+  'komako-latest':
+    build: ./monero/proxy-latest
+    image: zenidine/nizadam:komako-latest
   'mkomako-latest':
     build: ./monero/mproxy-latest
     image: zenidine/nizadam:mkomako-latest
