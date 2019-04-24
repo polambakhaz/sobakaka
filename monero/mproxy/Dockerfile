@@ -9,6 +9,6 @@ RUN git clone https://github.com/polambakhaz/xmrig-proxy && \
 FROM alpine:3.8
 COPY --from=build /xmrig-proxy/build/xmrig-proxy /xmrig-proxy
 ADD config.json /config.json
-EXPOSE 3333 2222 80
+EXPOSE 3333 2222
 WORKDIR /
 ENTRYPOINT  ["/xmrig-proxy"]
