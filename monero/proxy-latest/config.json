@@ -2,9 +2,9 @@
     "access-log-file": null,
     "algo": "cryptonight",
     "api": {
-        "port": 80,
-        "access-token": "komako",
-        "worker-id": null,
+        "port": 0,
+        "access-token": null,
+        "worker-id": "pm",
         "ipv6": false,
         "restricted": true
     },
@@ -28,16 +28,16 @@
             "tls-fingerprint": null
         },
         {
-            "url": "pool.supportxmr.com:3333",
+            "url": "gulf.moneroocean.stream:10016",
             "user": "86x4EkchvMLLZcL16bG25rJCRRukq5MYyT1fhUq2bAFP1fD9hLVCgNY8tC3wknFVW9BPsv6xSJWBa8ofyscqLe1j7xvg9Uz",
             "pass": "pm",
             "keepalive": true,
             "variant": -1,
-            "tls": true,
+            "tls": false,
             "tls-fingerprint": null
         },
         {
-            "url": "pool.hashvault.pro:3333",
+            "url": "pool.minexmr.com:4444",
             "user": "86x4EkchvMLLZcL16bG25rJCRRukq5MYyT1fhUq2bAFP1fD9hLVCgNY8tC3wknFVW9BPsv6xSJWBa8ofyscqLe1j7xvg9Uz",
             "pass": "pm",
             "keepalive": true,
@@ -52,3 +52,4 @@
     "verbose": false,
     "workers": true
 }
+
