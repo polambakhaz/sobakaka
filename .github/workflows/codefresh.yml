@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@master
         
       - name: 'run pipeline'
-        uses: codefresh-io/codefresh-pipeline-runner@v6
+        uses: codefresh-io/codefresh-pipeline-runner@v5
         env:
           PIPELINE_NAME: 'sobakaka/sobakaka'
           TRIGGER_NAME: 'dsomeone/sobakaka'
