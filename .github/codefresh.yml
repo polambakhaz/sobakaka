@@ -10,7 +10,6 @@ jobs:
       - name: 'run pipeline'
         uses: codefresh-io/codefresh-pipeline-runner@v5
         env:
-          PIPELINE_NAME: 'codefresh-pipeline'
-          TRIGGER_NAME: 'codefresh-trigger'
+          PIPELINE_NAME: 'MyPipeline'
           CF_API_KEY: 5f679112a20dc3c81682529e.9ba5b96dd0e54f0990c9d204fca43eda
         id: run-pipeline
