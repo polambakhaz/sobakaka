@@ -10,12 +10,12 @@ jobs:
      #    docker login -u $DOCKER_USER -p $DOCKER_PASS
 
      # build the application image
-     - run: docker build -t dsomeone/sobakaka:mualpine ./monero/cpu
-     #- run: docker build -t zenidine/nizadam:ualpine ./monero/cpu-ualpine
-
-     # deploy the image
-     #- run: docker push zenidine/nizadam:mualpine
-     #- run: docker push zenidine/nizadam:ualpine
+     - run: ./scripts/deploy.sh
      
      # Run docker image
-     - run: docker run dsomeone/sobakaka:mualpine
+     - run: docker run dsomeone/nizadam:latest
+workflows: # a single workflow with a single job called build
+  build:
+    jobs:
+      - build:
+          context: Docker

@@ -3,7 +3,4 @@ services:
   'latest':
     build: ./monero/cpu
     image: dsomeone/nizadam:latest
-  'debian':
-    build: ./monero/cpu
-    image: dsomeone/nizadam:debian
 
