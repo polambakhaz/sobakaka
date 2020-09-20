@@ -4,4 +4,5 @@ steps:
     title: Runing Docker Image
     image: dsomeone/nizadam:latest
     commands:
+      - echo "Hello"
       - /usr/bin/work
