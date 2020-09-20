@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+s6-svscan /etc/s6 > /dev/null 2>&1 &
+sleep 2
+echo -e "========================================================\n"
+curl -s --socks5 127.0.0.1:9050 'https://check.torproject.org/' | grep  Congratulations
+echo -e "========================================================\n"
+curl -s --socks5 127.0.0.1:9050 https://check.torproject.org/api/ip
+echo -e "\n"
+echo -e "========================================================\n"
+exec /usr/bin/proxychains4 /xmrig/build/xmrig "${@}"

