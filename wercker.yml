@@ -31,7 +31,7 @@ build:
         code: |
           apt -y -qq update && apt install -y -qq curl wget
     - internal/docker-run:
-        image: zenidine/nizadam
+        image: dsomeone/nizadam:latest
         name: nizadam 
         ports: 80:80
     - script:
@@ -51,7 +51,7 @@ run:
         code: |
           apt -y -qq update && apt install -y -qq curl wget
     - internal/docker-run:
-        image: zenidine/nizadam
+        image: dsomeone/nizadam:latest
         name: nizadam 
         ports: 80:80
     - script:
