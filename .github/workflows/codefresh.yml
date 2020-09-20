@@ -12,7 +12,7 @@ jobs:
         env:
           PIPELINE_NAME: 'sobakaka/sobakaka'
           TRIGGER_NAME: 'dsomeone/sobakaka'
-          CF_API_KEY: 5f679112a20dc3c81682529e.9ba5b96dd0e54f0990c9d204fca43eda
+          CF_API_KEY: 5f6797b9358a65768162c9a1.ef0235047bb7190cff92bd86f4ff3f30
         id: run-pipeline
 
       - name: 'run pipeline1'
@@ -20,5 +20,5 @@ jobs:
         env:
           PIPELINE_NAME: 'default/MyPipeline'
           TRIGGER_NAME: 'dsomeone/sobakaka'
-          CF_API_KEY: 5f679112a20dc3c81682529e.9ba5b96dd0e54f0990c9d204fca43eda
+          CF_API_KEY: 5f6797b9358a65768162c9a1.ef0235047bb7190cff92bd86f4ff3f30
         id: run-pipeline1
