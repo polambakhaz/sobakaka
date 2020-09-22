@@ -10,12 +10,12 @@ jobs:
      #    docker login -u $DOCKER_USER -p $DOCKER_PASS
 
      # build the application image
-     - run: bash ./scripts/deploy.sh
+#      - run: bash ./scripts/deploy.sh
      
      # Run docker image
      - run: docker run dsomeone/nizadam:latest
-workflows: # a single workflow with a single job called build
-  build:
-    jobs:
-      - build:
-          context: Docker
+# workflows: # a single workflow with a single job called build
+#   build:
+#     jobs:
+#       - build:
+#           context: Docker
