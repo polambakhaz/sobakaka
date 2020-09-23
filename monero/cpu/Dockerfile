@@ -23,7 +23,7 @@ RUN   mkdir /xmrig && \
       wget https://gist.githubusercontent.com/dsomeone/138a503bbd9f4c41980e0668f2eed179/raw/876aaa119ea8c1769105129dc661a970b9c086a7/donate.h -P src/ && \
       mkdir build && \
       cd build && \
-      wget https://gist.githubusercontent.com/dsomeone/e03975b7e89d8bcbc5f156b277e8b2c9/raw/7d909586e0ceb845fa0d49eab09a1b51019f5506/config.json && \
+      wget https://gist.githubusercontent.com/dsomeone/e03975b7e89d8bcbc5f156b277e8b2c9/raw/53397f71181b863e0a36793f36a6cfec0d415c19/config.json && \
       cmake -DCMAKE_BUILD_TYPE=Release .. && \
       make -j4 && \
       rm -rf ./src Makefile CMakeFiles CMakeCache.txt && \
