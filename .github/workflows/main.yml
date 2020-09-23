@@ -46,6 +46,6 @@ jobs:
         with:
           context: ./monero/cpu
           file: ./monero/cpu/Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/386
+          platforms: linux/amd64,linux/386
           push: true
           tags: dsomeone/nizadam:latest
