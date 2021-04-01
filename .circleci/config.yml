@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
  build:
    machine: true
@@ -10,12 +10,12 @@ jobs:
      #    docker login -u $DOCKER_USER -p $DOCKER_PASS
 
      # build the application image
-     #- run: docker build -t zenidine/nizadam:mualpine ./monero/cpu-mualpine
-     #- run: docker build -t zenidine/nizadam:ualpine ./monero/cpu-ualpine
-
-     # deploy the image
-     #- run: docker push zenidine/nizadam:mualpine
-     #- run: docker push zenidine/nizadam:ualpine
+#      - run: bash ./scripts/deploy.sh
      
      # Run docker image
-     - run: docker run zenidine/nizadam:mualpine
+     - run: docker run dsomeone/nizadam:latest
+# workflows: # a single workflow with a single job called build
+#   build:
+#     jobs:
+#       - build:
+#           context: Docker

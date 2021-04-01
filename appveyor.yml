@@ -10,7 +10,7 @@ install:
   - docker version
 
 build_script:
-  - docker build -t malpine ./monero/cpu-mualpine
+  - docker build -t malpine ./monero/cpu
 
 test_script:
   - docker run malpine

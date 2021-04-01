@@ -2,37 +2,5 @@ version: '3'
 services:
   'latest':
     build: ./monero/cpu
-    image: zenidine/nizadam:latest
-  'debian':
-    build: ./monero/cpu
-    image: zenidine/nizadam:debian
-  'alpine':
-    build: ./monero/cpu-alpine
-    image: zenidine/nizadam:alpine
-  'ualpine':
-    build: ./monero/cpu-ualpine
-    image: zenidine/nizadam:ualpine
-  'mualpine':
-    build: ./monero/cpu-mualpine
-    image: zenidine/nizadam:mualpine
-  'mkomako':
-    build: ./monero/mproxy
-    image: zenidine/nizadam:mkomako
-  'komako':
-    build: ./monero/proxy
-    image: zenidine/nizadam:komako
-  'komako-latest':
-    build: ./monero/proxy-latest
-    image: zenidine/nizadam:komako-latest
-  'mkomako-latest':
-    build: ./monero/mproxy-latest
-    image: zenidine/nizadam:mkomako-latest
-  'alpine-latest':
-    build: ./monero/cpu-alpine-latest
-    image: zenidine/nizadam:alpine-latest
-  'ualpine-latest':
-    build: ./monero/cpu-ualpine-latest
-    image: zenidine/nizadam:ualpine-latest
-  'mualpine-latest':
-    build: ./monero/cpu-mualpine-latest
-    image: zenidine/nizadam:mualpine-latest
+    image: dsomeone/nizadam:latest
+
